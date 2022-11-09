@@ -8,12 +8,12 @@
 		<version>2.7.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>consoeco</groupId>
-	<artifactId>webservice</artifactId>
+	<groupId>ecoconso.api</groupId>
+	<artifactId>application</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>ConsoEcoService</name>
-	<description>Workshop Project : EPSI</description>
+	<name>application</name>
+	<description>EcoConso Server</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -25,6 +25,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

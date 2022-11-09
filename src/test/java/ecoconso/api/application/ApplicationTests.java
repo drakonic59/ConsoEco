@@ -1,10 +1,10 @@
-package consoeco.webservice;
+package ecoconso.api.application;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ConsoEcoServiceApplicationTests {
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {

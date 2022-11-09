@@ -5,6 +5,7 @@ import okhttp3.*;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
+import java.util.List;
 
 @Service
 public class ScoreService {
@@ -30,5 +31,15 @@ public class ScoreService {
         String result = second.split("\"score\":")[1].split(",")[0];
         System.out.println(result);
         return result;
+    }
+
+    public String getAverageScore(List<String> codes) throws IOException {
+        int factors = 0;
+        float total = 0;
+        for (String code: codes) {
+            factors++;
+            total += Float.parseFloat(getScore(code));
+        }
+        return String.valueOf(total/factors);
     }
 }
